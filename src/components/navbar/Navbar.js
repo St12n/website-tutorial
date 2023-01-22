@@ -15,20 +15,19 @@ function Navbar() {
     return (
         <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
             <div className='logo'>
-                <h2>INFO_</h2>
+                <h2>.logo&#123;Stino&#125;</h2>
             </div>
             <ul className={nav ? 'nav-menu nav-menu-bg' : 'nav-menu'}>
                 <li>_About Me</li>
                 <li>_Curriculum</li>
                 <li>_Contact me</li>
-                <li>_PLACEHOLDER</li>
             </ul>
             <div className='nav-icons'>
                 <BiSearch className='icon' style={{marginRight: '1rem'}}/>
                 <BsPerson className='icon'/>
             </div>
             <div className='hamburger-menu' onClick={handleNav}>
-                {!nav ? (<RiMenu5Fill className='icon'/>) : (<RiCloseFill className='icon' style={{fontSize: '1.5rem'}}/>)}
+                {!nav ? (<RiMenu5Fill className='icon' style={{fontSize: '2rem'}}/>) : (<RiCloseFill className='icon' style={{fontSize: '2rem'}}/>)}
             </div>
 
 
@@ -37,7 +36,6 @@ function Navbar() {
                     <li>_About Me</li>
                     <li>_Curriculum</li>
                     <li>_Contact me</li>
-                    <li>_PLACEHOLDER</li>
                 </ul>
                 <div className='mobile-menu-bottom'>
                     <div className='menu-icons'>
