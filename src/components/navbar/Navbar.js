@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import {BiSearch} from "react-icons/bi";
-import {BsPerson} from "react-icons/bs";
+import {BiHome} from "react-icons/bi";
 import {RiCloseFill, RiMenu5Fill} from "react-icons/ri";
 import {FaGoodreads, FaInstagram, FaLinkedin, FaGithub} from "react-icons/fa";
 import './NavbarStyles.css';
+import mainLogo from '../../assets/logo-noBackground.png'
 
 
 
@@ -15,7 +15,7 @@ function Navbar() {
     return (
         <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
             <div className='logo'>
-                <h2>.logo&#123;Stino&#125;</h2>
+                <img src={mainLogo} alt="logo"/>
             </div>
             <ul className={nav ? 'nav-menu nav-menu-bg' : 'nav-menu'}>
                 <li>_About Me</li>
@@ -23,11 +23,12 @@ function Navbar() {
                 <li>_Contact me</li>
             </ul>
             <div className='nav-icons'>
-                <BiSearch className='icon' style={{marginRight: '1rem'}}/>
-                <BsPerson className='icon'/>
+                <BiHome className='icon' style={{marginRight: '1rem'}}/>
+                <span className="nav-icons-home-text">Home</span>
             </div>
             <div className='hamburger-menu' onClick={handleNav}>
                 {!nav ? (<RiMenu5Fill className='icon' style={{fontSize: '2rem'}}/>) : (<RiCloseFill className='icon' style={{fontSize: '2rem'}}/>)}
+                <span className="hamburger-menu-text">Menu</span>
             </div>
 
 

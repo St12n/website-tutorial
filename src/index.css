@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan+2');
 
 :root {
-  --primary-dark: #0B4F6C;
-  --primary-light: #98C1D9;
-  --primary-accent: #EE6C4D;
-  --secondary-light: #E0FBFC;
-  --secondary-dark: #775B59;
+  --primary-dark: #5E2C2C;
+  --primary-light: #fffdd0;
+  --primary-accent: #8A360F;
+  --secondary-light: #f5f5dc;
+  --secondary-dark: #1C1C1C;
 }
 
 *{
